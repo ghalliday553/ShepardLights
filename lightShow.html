@@ -1,0 +1,104 @@
+
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+   <title>Bradys A Piece of Shit</title>
+   <style>
+      .button {
+         background-color: #4CAF50; /* Green */
+         border: none;
+         color: white;
+         padding: 40px 32px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 30px;
+      }
+   </style>
+ </head>
+ 
+ <body>
+    <div style="display: flex; flex-direction: column; justify-content: space-between">
+         <button class = "button" style = "background-color: red" type="button" onclick="off()">Off</button>
+         <button class = "button" type="button" onclick="Passion()">Passion</button>
+         <button class = "button" type="button" onclick="Reapers()">Reapers</button>
+         <button class = "button" type="button" onclick="PickMeUp()">Pick Me Up</button> 
+         <button class = "button" type="button" onclick="Introspective()">Introspective</button>
+         <button class = "button" type="button" onclick="Lake()">The Lake</button>
+         <button class = "button" type="button" onclick="Clouds()">Head in the Clouds</button>
+         <button class = "button" type="button" onclick="Uncanadian()">Uncanadian</button>
+         <button class = "button" type="button" onclick="Wildside()">Wildside</button>    
+    </div>
+    <H1 id="currentSong">
+      Current Song is: None
+    </H1>
+ </body>
+ <script>
+     function off() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/off", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Off";
+        return offRequest.responseText;
+     }
+     function Passion() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/passion", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Passion";
+        return offRequest.responseText;
+     }
+     function Reapers() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/reapers", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Reapers";
+        return offRequest.responseText;
+     }
+     function PickMeUp() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/pick", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Pick Me Up";
+        return offRequest.responseText;
+     }
+     function Introspective() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/intro", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Introspective";
+        return offRequest.responseText;
+     }
+     function Lake() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/lake", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: The Lake";
+        return offRequest.responseText;
+     }
+     function Clouds() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/clouds", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Head in my Dad";
+        return offRequest.responseText;
+     }
+     function Uncanadian() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/uncanadian", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Uncanadian";
+        return offRequest.responseText;
+     }
+     function Wildside() {
+        var offRequest = new XMLHttpRequest();
+        offRequest.open( "GET", "/wildside", false ); // false for synchronous request
+        offRequest.send( null );
+        document.getElementById("currentSong").innerHTML = "Current Song is: Wildside";
+        return offRequest.responseText;
+     }
+ </script>
+ </html>
